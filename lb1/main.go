@@ -215,7 +215,7 @@ func showGraphic(N int, squares []Square) {
 		}
 	}
 
-	outFile, err := os.Create("./lb1/squares.png")
+	outFile, err := os.Create("./lb1/images/squares.png")
 	if err != nil {
 		panic(err)
 	}
