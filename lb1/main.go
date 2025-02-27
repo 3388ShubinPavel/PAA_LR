@@ -68,7 +68,7 @@ func main() {
 		Solve(occupied, initialSquare, N, 1)
 	}
 	duration := time.Since(start)
-	fmt.Println("Time to sole:", duration)
+	fmt.Println("Time to solve:", duration)
 	fmt.Println("Interations:", interationsCnt)
 	fmt.Println(minSquares)
 	for _, square := range bestResult {
