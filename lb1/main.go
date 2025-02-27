@@ -21,7 +21,7 @@ func (s Square) String() string {
 
 var minSquares = 999999
 var bestResult []Square
-var interationsCnt int
+var iterationsCnt int
 
 func main() {
 	benchmark := flag.Bool("benchmark", false, "Run mode")
@@ -69,7 +69,7 @@ func main() {
 	}
 	duration := time.Since(start)
 	fmt.Println("Time to solve:", duration)
-	fmt.Println("Interations:", interationsCnt)
+	fmt.Println("Iterations:", iterationsCnt)
 	fmt.Println(minSquares)
 	for _, square := range bestResult {
 		fmt.Println(square.String())
@@ -101,7 +101,7 @@ func placeInitialSquares(N int, occupied [][]bool) []Square {
 }
 
 func Solve(occupied [][]bool, current []Square, gridSize, scale int) {
-	interationsCnt++
+	iterationsCnt++
 	pos := findFirstFreePosition(occupied, gridSize)
 	if pos == -1 {
 		if len(current) < minSquares {

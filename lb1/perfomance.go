@@ -22,7 +22,7 @@ func Benchmark() {
 		/**
 		Update variables for each N
 		*/
-		interationsCnt = 0
+		iterationsCnt = 0
 		minSquares = 999999
 		bestResult = []Square{}
 
@@ -45,9 +45,9 @@ func Benchmark() {
 		data = append(data, struct {
 			N          int
 			Iterations int
-		}{N: N, Iterations: interationsCnt})
+		}{N: N, Iterations: iterationsCnt})
 
-		fmt.Printf("Processed N=%d, Iterations=%d\n", N, interationsCnt)
+		fmt.Printf("Processed N=%d, Iterations=%d\n", N, iterationsCnt)
 	}
 
 	p := plot.New()
