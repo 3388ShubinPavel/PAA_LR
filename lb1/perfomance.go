@@ -81,8 +81,6 @@ func Benchmark() {
 	if err := p.Save(8*vg.Inch, 8*vg.Inch, "./lb1/images/iterations.png"); err != nil {
 		log.Fatal(err)
 	}
-
-	fmt.Println("График сохранен в файл iterations.png")
 }
 
 func IsPrime(n int) bool {
