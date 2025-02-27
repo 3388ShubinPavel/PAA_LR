@@ -78,7 +78,7 @@ func Benchmark() {
 	p.X.Label.Text = "N (Prime Numbers)"
 	p.Y.Label.Text = "Number of Iterations"
 
-	if err := p.Save(8*vg.Inch, 8*vg.Inch, "iterations.png"); err != nil {
+	if err := p.Save(8*vg.Inch, 8*vg.Inch, "./lb1/iterations.png"); err != nil {
 		log.Fatal(err)
 	}
 
