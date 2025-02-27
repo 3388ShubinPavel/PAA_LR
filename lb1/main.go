@@ -107,7 +107,14 @@ func Solve(occupied [][]bool, current []Square, gridSize, scale int) {
 		if len(current) < minSquares {
 			minSquares = len(current)
 			bestResult = append([]Square{}, current...)
+
+			fmt.Println("--- New Best Result ---")
+			for _, square := range bestResult {
+				fmt.Println(square.String())
+			}
+			fmt.Println("-----------------------")
 		}
+
 		return
 	}
 
