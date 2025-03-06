@@ -36,10 +36,10 @@ func Benchmark() {
 			for i := range occupied {
 				occupied[i] = make([]bool, newGridSize)
 			}
-			Solve(occupied, []Square{}, newGridSize, squareSize)
+			Solve(occupied, []Square{}, newGridSize, squareSize, 0)
 		} else {
 			initialSquare := placeInitialSquares(N, occupied)
-			Solve(occupied, initialSquare, N, 1)
+			Solve(occupied, initialSquare, N, 1, 0)
 		}
 
 		data = append(data, struct {
