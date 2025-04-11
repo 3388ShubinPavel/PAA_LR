@@ -68,8 +68,6 @@ func handleNonOverlappingSearch(verbose bool) {
 	printNonOverlappingResults(nonOverlapping)
 }
 
-// Вспомогательные функции
-
 func inputPatterns(n int) []string {
 	patterns := make([]string, n)
 	for i := 0; i < n; i++ {
